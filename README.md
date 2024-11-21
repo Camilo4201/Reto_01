@@ -1,6 +1,10 @@
 # 1. Crear una función que realice operaciones básicas (suma, resta, multiplicación, división) entre dos números, según la elección del usuario, la forma de entrada de la función será los dos operandos y el caracter usado para la operación. entrada: (1,2,"+"), salida (3).
+En este código  se define la función llamada calculadora, donde se le dice que realice una operación(Suma, resta, multiplicación o división) en caso de ingresar otra operación o caracteres no indicados devolverá  "Una operación inválida" o  si se divide entre  cero nos  dara "Error: División por cero no permitida."
+
+Para esto se le pide al usuario que ingrese los números, y  dentro del código se escribe como  float(input).., el float nos permite que  el  valor  ingresado, sea numérico y no sea un string (Una secuencia  de caracteres), evitando así que si se  ingresa el número 1 el número 2, y se asigna la operación de sumar, nos dé como resultado 12.
 
 # 2. Realice una función que permita validar si una palabra es un palíndromo. Condición: No se vale hacer slicing para invertir la palabra y verificar que sea igual a la original.
+
 
 # 3. Escribir una función que reciba una lista de números y devuelva solo aquellos que son primos. La función debe recibir una lista de enteros y retornar solo aquellos que sean primos.
 
