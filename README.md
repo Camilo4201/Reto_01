@@ -5,10 +5,15 @@ Para esto se le pide al usuario que ingrese los números, y  dentro del código 
 
 # 2. Realice una función que permita validar si una palabra es un palíndromo. Condición: No se vale hacer slicing para invertir la palabra y verificar que sea igual a la original.
 
-
 # 3. Escribir una función que reciba una lista de números y devuelva solo aquellos que son primos. La función debe recibir una lista de enteros y retornar solo aquellos que sean primos.
-
+En este código se lleva a cabo una comprensión de listas, en donde se toma  en cuenta todos los números  mayores a  1, y se filtran los números primos  haciendo uso de un método matemático, realizando un rango desde 2 hasta todos los números que son la raíz de x (los números generados por el range()) y de este, resultado se toma en cuenta si hay números los cuales pueden dividir a x, en el caso de  presentarse, no será un número primo, y se excluirán de la nueva lista, realizando esto mediante el uso de !=, el cual filtra todos los números   que tienen divisiones exactas(tienen residuo 0).
 # 4. Escribir una función que reciba una lista de números enteros y retorne la mayor suma entre dos elementos consecutivos.
-
+En este código se implementa una función la cual recibe una lista de números enteros y calcula la mayor suma entre dos elementos consecutivos de esa lista. Primero, la función recorre la lista de números, sumando cada par de elementos consecutivos, esto es provocado por zip() generando tuplas  y  sumando los dos elementos de cada lista (a + b). Luego, compara la suma de cada par con la suma máxima encontrada hasta el momento. Si encuentra una suma mayor, actualiza el valor máximo, esto es dado gracias a max(). Al final, retorna la mayor suma entre los elementos consecutivos de la lista.
 # 5. Escribir una función que reciba una lista de string y retorne unicamente aquellos elementos que tengan los mismos caracteres. e.g. entrada: ["amor", "roma", "perro"], salida ["amor", "
-
+Este código tiene como objetivo identificar palabras "parecidas" en una lista de cadenas, donde dos palabras son consideradas parecidas si tienen las mismas letras, pero en diferente orden.
+ Aunque en el código no se usa, la función reduce se importa desde functools. Podría usarse en una versión más compleja del código.
+Definición de la lista elementos: Contiene un conjunto de palabras, algunas de las cuales son anagramas (por ejemplo, "amor" y "roma")
+Se hace uso de map para aplicar la función lambda a cada palabra en la lista elementos. La función lambda reordena las palabras, de forma alfabética, generando una nueva lista (a).
+Después  la función palabras_parecidas recibe la lista a, en esta función, se crean listas de palabras "parecidas"  revisando si una palabra aparece más de una vez en a. Si es así, se agrega a la lista palabras_unicas.
+Después de tener esta nueva lista,  el código reconstruye las palabras originales y las agrega a
+  resultados_originales, imprimiendo finalmente este resultado.
